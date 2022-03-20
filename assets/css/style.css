@@ -424,11 +424,23 @@
     background-position: -58px -125px;
 }
 
+.movie_chart>div>div .infor .infor_btn {
+    overflow: hidden;
+}
+
 .movie_chart>div>div .infor .infor_btn a {
-    display: inline-block;
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+    text-align: center;
     background: #f2f2f2;
     font-size: 18px;
-    padding: 15px 30px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.movie_chart>div>div .infor .infor_btn a:last-child {
+    margin-right: 0;
 }
 
 

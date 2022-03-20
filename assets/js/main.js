@@ -12,6 +12,22 @@ var swiper = new Swiper('.swiper-container',{
     },
 });
 
+//영화차트 이미지 슬라이드
+var mySwiper = new Swiper('.swiper-container2', {
+    slidesPerView: 4,
+    spaceBetween: 24,
+    // mousewheel: {
+    //     invert: true,
+    // },
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
+    autoplay: {
+        delay: 6000,
+    },
+});
+
 //영화차트 탭 메뉴
 var movBtn = $(".movie_title > ul > li");
 var movCont = $(".movie_chart > div");
