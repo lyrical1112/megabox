@@ -351,14 +351,20 @@
 
 .movie_chart>div>div .poster .rank {
     position: absolute;
-    top: 17px;
-    left: 0;
+    top: 5px;
+    left: 5px;
     width: 50px;
     height: 50px;
     line-height: 50px;
     background-color: #38116a;
-    color: #fff;
     text-align: center;
+    font-size: 22px;
+    box-shadow: 3px 3px 8px rgb(0 0 0 / 50%);
+}
+
+.movie_chart>div>div .poster .rank strong {
+    color: #fff;
+    text-shadow: 2px 2px 3px rgb(0 0 0)
 }
 
 .movie_chart>div>div .poster .mx {
@@ -417,8 +423,6 @@
 .movie_chart>div>div .infor span.a19 {
     background-position: -58px -125px;
 }
-
-.movie_chart>div>div .infor h3 strong {}
 
 .movie_chart>div>div .infor .infor_btn a {
     display: inline-block;
