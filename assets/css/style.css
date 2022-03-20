@@ -7,16 +7,21 @@
     border-bottom: 1px solid #c6c6c6;
 }
 
-#banner {
-    position: relative;
-}
-
 #mNav {
     display: none;
     position: absolute;
     top: 10px;
     right: 14px;
 }
+
+#banner {
+    position: relative;
+}
+
+#movie {
+    background-color: #f8f8f8;
+}
+
 
 /* 가운데 영억 */
 .container {
@@ -440,6 +445,45 @@
     margin-right: 0;
 }
 
+/* 이벤트 */
+.event {
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.event img {
+    display: block;
+}
+
+.event h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.event .event_left {
+    overflow: hidden;
+    float: left;
+    width: 66%;
+    margin-right: 2%;
+}
+
+.event .event_left .event_box1 {
+    float: left;
+    width: 50%;
+}
+
+.event .event_left .event_box2 {
+    float: left;
+    width: 50%;
+}
+
+.event .event_rignt {
+    float: left;
+    width: 32%;
+}
+
+
 
 /* 미디어쿼리 */
 @media (max-width:1290px) {
@@ -557,9 +601,13 @@
         display: none;
     }
 
+    #movie {
+        background: none;
+    }
+
     #movie .row {
         background: #fff;
-        margin: 24px;
+        margin: 24px 24px 0 24px;
         padding: 24px;
     }
 
@@ -626,6 +674,29 @@
     .movie_title li.active a {
         background: none;
         color: #666;
+    }
+
+    #event .row {
+        padding: 24px;
+    }
+
+    .event {
+        background: #fff;
+        padding: 24px;
+    }
+
+    .event h2 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .event .event_left {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .event .event_rignt {
+        display: none;
     }
 }
 
@@ -773,6 +844,19 @@
 
     .movie_chart>div>div .infor .infor_btn a:last-child {
         display: none;
+    }
+
+    #event .row {
+        padding: 0 8px;
+    }
+
+    .event {
+        padding: 16px;
+    }
+
+    .event h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
     }
 }
 
