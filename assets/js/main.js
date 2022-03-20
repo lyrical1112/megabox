@@ -1,3 +1,4 @@
+// 배너 이미지 슬라이드
 var swiper = new Swiper('.swiper-container',{
     pagination: {
         el: '.swiper-pagination',
