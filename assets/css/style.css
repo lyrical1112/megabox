@@ -281,22 +281,22 @@
 }
 
 .slider .ss1 {
-    background: url(/assets/img/main_slider01_2000.jpg) no-repeat center center;
+    background: url(../img/main_slider01_2000.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .slider .ss2 {
-    background: url(/assets/img/main_slider02_2000.jpg) no-repeat center center;
+    background: url(../img/main_slider02_2000.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .slider .ss3 {
-    background: url(/assets/img/main_slider03_2000.jpg) no-repeat center center;
+    background: url(../img/main_slider03_2000.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .slider .ss4 {
-    background: url(/assets/img/main_slider04_2000.jpg) no-repeat center center;
+    background: url(../img/main_slider04_2000.jpg) no-repeat center center;
     background-size: cover;
 }
 
