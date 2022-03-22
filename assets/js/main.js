@@ -57,3 +57,22 @@ movBtn.click(function(e){
     movCont.css("display","none");
     movCont.eq(index).css("display","block");
 });
+
+// 공지사항 탭메뉴 
+let tabMenu = $(".notice");
+
+// 컨텐츠 내용 숨기기
+tabMenu.find("ul > li > ul").hide();
+tabMenu.find("li.active > ul").show();
+
+function tabList(e) {
+    e.preventDefault(); //a태그의 #의 기능을 차단
+    let target = $(this);
+    target.next().show().parent("li").addClass("active").siblings("li").removeClass("active").find("ul").hide();
+    // 버튼을 클릭하면 ~ul을 보여주고
+    // 부모의 li태그에 클래스 추가하고
+    // 형제의 li태그에 클래스 제거하고
+    // 제거한 자식의 ul 태그를 숨겨준다
+}
+
+tabMenu.find("ul > li > a").click(tabList).focus(tabList);
